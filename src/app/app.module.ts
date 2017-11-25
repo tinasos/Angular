@@ -1,16 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-
+import {MatToolbarModule, } from '@angular/material';
+import {MatCardModule} from '@angular/material/card';
 import { AppComponent } from './app.component';
+import { MyNewCardComponent } from './my-new-card/my-new-card.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MyNewCardComponent
   ],
+  
   imports: [
-    BrowserModule
+    BrowserModule,
+    MatToolbarModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
